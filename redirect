@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        // Array of URLs to redirect to
+        const urls = [
+            "https://www.lokalino.it/",
+            "https://www.unitn.it/"
+        ];
+        // Redirects to a random URL from the array
+        window.location.href = urls[Math.floor(Math.random() * urls.length)];
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a href="javascript:window.location.reload();">click here</a>.</p>
+</body>
+</html>
